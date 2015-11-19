@@ -6,11 +6,19 @@ app.config(function($routeProvider){
       templateUrl: 'newpage.html',
       controller: 'mainControl'
     })
-    .when('/view2', {
+    .when('/dog', {
       templateUrl: 'newpage2.html',
       controller: 'mainControl'
     })
-    .otherwise({ redirectTo: '/' });
+    .when('/wolf', {
+      templateUrl: 'wolf.html',
+      controller: 'mainControl'
+    })
+    .when('/fox', {
+      templateUrl: 'fox.html',
+      controller: 'mainControl'
+    })
+    .otherwise({ redirectTo: '/404.html' });
 });
 
 app.controller('mainControl', function() {
