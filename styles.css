@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.navList {
+  position: fixed;
+  top: 0;
+  height: 10%;
+  width: 100%;
+}
+.navA {
+  display: block;
+  height: 100%;
+}
+.navLi {
+  display: inline-block;
+  height: 100%;
+  width: 20%;
+  background-color: #CCC;
+  text-decoration: none;
+}
