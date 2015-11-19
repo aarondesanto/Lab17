@@ -12,14 +12,17 @@
 </head>
 <body ng-app='mainModule'>
 
-  <ul class="navList">
-    <li class="navLi"><a class="navA" href="/">Cat</a></li>
-    <li class="navLi"><a class="navA" href="/dog">Dog</a></li>
-    <li class="navLi"><a class="navA" href="/wolf">Wolf</a></li>
-    <li class="navLi"><a class="navA" href="/fox">Fox</a></li>
-  </ul>
+  <nav>
+    <ul class="navBar">
+      <li class="navLi"><a class="navA" href="/">Cat</a></li>
+      <li class="navLiEmpty"></li>
+      <li class="navLi"><a class="navA" href="/dog">Dog</a></li>
+      <li class="navLi"><a class="navA" href="/asdf">Wolf</a></li>
+      <li class="navLi"><a class="navA" href="/fox">Fox</a></li>
+    </ul>
+  </nav>
 
-  <ng-view></ng-view>
+  <ng-view class="mainWrapper"></ng-view>
 
 </body>
 </html>
