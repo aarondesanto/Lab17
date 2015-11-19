@@ -1,6 +1,6 @@
 var app = angular.module('mainModule', ['ngRoute']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $locationProvider){
   $routeProvider
     .when('/', {
       templateUrl: 'newpage.html',
@@ -18,7 +18,12 @@ app.config(function($routeProvider){
       templateUrl: 'fox.html',
       controller: 'mainControl'
     })
-    .otherwise({ redirectTo: '/404.html' });
+    .otherwise({
+      templateUrl: '404.html',
+      controller: 'mainControl'
+    });
+
+    $locationProvider.html5Mode(true);
 });
 
 app.controller('mainControl', function() {
